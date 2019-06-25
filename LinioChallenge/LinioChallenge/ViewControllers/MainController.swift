@@ -32,7 +32,6 @@ class MainController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        mainViewModel.getFavoritesService()
     }
     
 

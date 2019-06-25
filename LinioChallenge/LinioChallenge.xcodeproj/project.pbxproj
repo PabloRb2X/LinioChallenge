@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38B7A5EA2D5F3E64D6E4473B /* Pods_LinioChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCA7138F44DB5A370A1B83B /* Pods_LinioChallengeTests.framework */; };
+		8FFE3C43C00A8AE7BF8B6334 /* Pods_LinioChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6555B7F647261ECCB371BA /* Pods_LinioChallenge.framework */; };
 		9A1EA75222C28D4900ECD548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA75122C28D4900ECD548 /* AppDelegate.swift */; };
 		9A1EA75422C28D4900ECD548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA75322C28D4900ECD548 /* ViewController.swift */; };
 		9A1EA75722C28D4900ECD548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1EA75522C28D4900ECD548 /* Main.storyboard */; };
@@ -26,6 +28,14 @@
 		9A1EA79B22C29D5000ECD548 /* FooterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA79922C29D5000ECD548 /* FooterViewCell.swift */; };
 		9A1EA79C22C29D5000ECD548 /* FooterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1EA79A22C29D5000ECD548 /* FooterViewCell.xib */; };
 		9A1EA79E22C2D09B00ECD548 /* wishlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1EA79D22C2D09B00ECD548 /* wishlist.json */; };
+		9A1EA7A022C2D6E000ECD548 /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */; };
+		9A1EA7A222C2D7E500ECD548 /* ServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */; };
+		9A1EA7A422C2D7F100ECD548 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */; };
+		9A1EA7A522C2DA7000ECD548 /* ServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */; };
+		9A1EA7A622C2DA9100ECD548 /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */; };
+		9A1EA7A722C2DACD00ECD548 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA78922C296D600ECD548 /* FavoritesModel.swift */; };
+		9A1EA7A822C2DBA300ECD548 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */; };
+		D73DF8B737A10C6254C631C3 /* Pods_LinioChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A685406A981E3A09F1C992F1 /* Pods_LinioChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19F1DCD40D68E227A2A82F18 /* Pods-LinioChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinioChallenge.release.xcconfig"; path = "Target Support Files/Pods-LinioChallenge/Pods-LinioChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		2CCA7138F44DB5A370A1B83B /* Pods_LinioChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinioChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A602FA65FF80F43498FE9F /* Pods-LinioChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinioChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-LinioChallengeTests/Pods-LinioChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BEA2486765646111839DA51 /* Pods-LinioChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinioChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LinioChallengeUITests/Pods-LinioChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A1EA74E22C28D4900ECD548 /* LinioChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinioChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1EA75122C28D4900ECD548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A1EA75322C28D4900ECD548 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +85,14 @@
 		9A1EA79922C29D5000ECD548 /* FooterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewCell.swift; sourceTree = "<group>"; };
 		9A1EA79A22C29D5000ECD548 /* FooterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterViewCell.xib; sourceTree = "<group>"; };
 		9A1EA79D22C2D09B00ECD548 /* wishlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wishlist.json; sourceTree = "<group>"; };
+		9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUtils.swift; sourceTree = "<group>"; };
+		9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewModel.swift; sourceTree = "<group>"; };
+		9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		9A8FA0A0D9726E88DF2E44FB /* Pods-LinioChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinioChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-LinioChallengeTests/Pods-LinioChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B6555B7F647261ECCB371BA /* Pods_LinioChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinioChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A685406A981E3A09F1C992F1 /* Pods_LinioChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinioChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA88BB72267B1928B4ECF948 /* Pods-LinioChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinioChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-LinioChallengeUITests/Pods-LinioChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E6F2580A7F9FEFC44C9E8FC1 /* Pods-LinioChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinioChallenge.debug.xcconfig"; path = "Target Support Files/Pods-LinioChallenge/Pods-LinioChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFE3C43C00A8AE7BF8B6334 /* Pods_LinioChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B7A5EA2D5F3E64D6E4473B /* Pods_LinioChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +116,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73DF8B737A10C6254C631C3 /* Pods_LinioChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B891D9AE1DD431F8729931A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B6555B7F647261ECCB371BA /* Pods_LinioChallenge.framework */,
+				2CCA7138F44DB5A370A1B83B /* Pods_LinioChallengeTests.framework */,
+				A685406A981E3A09F1C992F1 /* Pods_LinioChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60E810E7E3950BB910D99FFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6F2580A7F9FEFC44C9E8FC1 /* Pods-LinioChallenge.debug.xcconfig */,
+				19F1DCD40D68E227A2A82F18 /* Pods-LinioChallenge.release.xcconfig */,
+				72A602FA65FF80F43498FE9F /* Pods-LinioChallengeTests.debug.xcconfig */,
+				9A8FA0A0D9726E88DF2E44FB /* Pods-LinioChallengeTests.release.xcconfig */,
+				8BEA2486765646111839DA51 /* Pods-LinioChallengeUITests.debug.xcconfig */,
+				BA88BB72267B1928B4ECF948 /* Pods-LinioChallengeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9A1EA74522C28D4900ECD548 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +153,8 @@
 				9A1EA76822C28D4C00ECD548 /* LinioChallengeTests */,
 				9A1EA77322C28D4C00ECD548 /* LinioChallengeUITests */,
 				9A1EA74F22C28D4900ECD548 /* Products */,
+				60E810E7E3950BB910D99FFB /* Pods */,
+				3B891D9AE1DD431F8729931A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +247,9 @@
 			isa = PBXGroup;
 			children = (
 				9A1EA79122C29C1F00ECD548 /* Extensions.swift */,
+				9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */,
+				9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */,
+				9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -208,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A1EA77922C28D4C00ECD548 /* Build configuration list for PBXNativeTarget "LinioChallenge" */;
 			buildPhases = (
+				A1B5B3F24F0B849A9029B7C3 /* [CP] Check Pods Manifest.lock */,
 				9A1EA74A22C28D4900ECD548 /* Sources */,
 				9A1EA74B22C28D4900ECD548 /* Frameworks */,
 				9A1EA74C22C28D4900ECD548 /* Resources */,
+				34D29CB38D1B4F82CE2402A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A1EA77C22C28D4C00ECD548 /* Build configuration list for PBXNativeTarget "LinioChallengeTests" */;
 			buildPhases = (
+				647B63E2F211FD6F75CEC43E /* [CP] Check Pods Manifest.lock */,
 				9A1EA76122C28D4C00ECD548 /* Sources */,
 				9A1EA76222C28D4C00ECD548 /* Frameworks */,
 				9A1EA76322C28D4C00ECD548 /* Resources */,
+				7E2C76FC3693E47D93CE8751 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A1EA77F22C28D4C00ECD548 /* Build configuration list for PBXNativeTarget "LinioChallengeUITests" */;
 			buildPhases = (
+				0630702B1BB1DE6A2C86DCE2 /* [CP] Check Pods Manifest.lock */,
 				9A1EA76C22C28D4C00ECD548 /* Sources */,
 				9A1EA76D22C28D4C00ECD548 /* Frameworks */,
 				9A1EA76E22C28D4C00ECD548 /* Resources */,
+				FFA6CE58009D4655B21AF98B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,6 +390,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0630702B1BB1DE6A2C86DCE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinioChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D29CB38D1B4F82CE2402A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinioChallenge/Pods-LinioChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinioChallenge/Pods-LinioChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinioChallenge/Pods-LinioChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		647B63E2F211FD6F75CEC43E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinioChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E2C76FC3693E47D93CE8751 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinioChallengeTests/Pods-LinioChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinioChallengeTests/Pods-LinioChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinioChallengeTests/Pods-LinioChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B5B3F24F0B849A9029B7C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinioChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA6CE58009D4655B21AF98B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinioChallengeUITests/Pods-LinioChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinioChallengeUITests/Pods-LinioChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinioChallengeUITests/Pods-LinioChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A1EA74A22C28D4900ECD548 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -340,11 +519,14 @@
 				9A1EA79B22C29D5000ECD548 /* FooterViewCell.swift in Sources */,
 				9A1EA78622C2919800ECD548 /* MainController.swift in Sources */,
 				9A1EA75422C28D4900ECD548 /* ViewController.swift in Sources */,
+				9A1EA7A422C2D7F100ECD548 /* ServiceManager.swift in Sources */,
+				9A1EA7A022C2D6E000ECD548 /* ServiceUtils.swift in Sources */,
 				9A1EA79722C29D3F00ECD548 /* HeaderViewCell.swift in Sources */,
 				9A1EA79222C29C1F00ECD548 /* Extensions.swift in Sources */,
 				9A1EA75222C28D4900ECD548 /* AppDelegate.swift in Sources */,
 				9A1EA75A22C28D4900ECD548 /* LinioChallenge.xcdatamodeld in Sources */,
 				9A1EA78E22C29B7C00ECD548 /* LoadingView.swift in Sources */,
+				9A1EA7A222C2D7E500ECD548 /* ServiceViewModel.swift in Sources */,
 				9A1EA78A22C296D600ECD548 /* FavoritesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +535,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1EA7A522C2DA7000ECD548 /* ServiceViewModel.swift in Sources */,
+				9A1EA7A622C2DA9100ECD548 /* ServiceUtils.swift in Sources */,
 				9A1EA76A22C28D4C00ECD548 /* LinioChallengeTests.swift in Sources */,
+				9A1EA7A722C2DACD00ECD548 /* FavoritesModel.swift in Sources */,
+				9A1EA7A822C2DBA300ECD548 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +704,7 @@
 		};
 		9A1EA77A22C28D4C00ECD548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F2580A7F9FEFC44C9E8FC1 /* Pods-LinioChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +724,7 @@
 		};
 		9A1EA77B22C28D4C00ECD548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F1DCD40D68E227A2A82F18 /* Pods-LinioChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,6 +744,7 @@
 		};
 		9A1EA77D22C28D4C00ECD548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A602FA65FF80F43498FE9F /* Pods-LinioChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -577,6 +766,7 @@
 		};
 		9A1EA77E22C28D4C00ECD548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8FA0A0D9726E88DF2E44FB /* Pods-LinioChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +788,7 @@
 		};
 		9A1EA78022C28D4C00ECD548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BEA2486765646111839DA51 /* Pods-LinioChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +809,7 @@
 		};
 		9A1EA78122C28D4C00ECD548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA88BB72267B1928B4ECF948 /* Pods-LinioChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

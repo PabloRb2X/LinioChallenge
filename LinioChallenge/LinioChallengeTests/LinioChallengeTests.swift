@@ -10,9 +10,16 @@ import XCTest
 @testable import LinioChallenge
 
 class LinioChallengeTests: XCTestCase {
+    
+    private var expectation: XCTestExpectation!
+    private var serviceViewModel: ServiceViewModel = ServiceViewModel()
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        expectation = self.expectation(description: "waitingResponse")
+        
+        self.errorCatalog()
     }
 
     override func tearDown() {
@@ -23,6 +30,18 @@ class LinioChallengeTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testFavoritesService(){
+        serviceViewModel.onSuccessFavoritesService = {(_ response: [Favorite]) -> Void in
+            print(response)
+            XCTAssert(true, "El servicio respondió correctamente")
+            self.expectation.fulfill()
+        }
+        
+        serviceViewModel.performFavoritesService()
+        
+        waitForExpectations(timeout: 60, handler: nil)
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
@@ -31,4 +50,15 @@ class LinioChallengeTests: XCTestCase {
         }
     }
 
+    func errorCatalog(){
+//        serviceViewModel.onFormatError = { (_ message: String) -> Void in
+//            XCTAssert(false, message)
+//            self.expectation.fulfill()
+//        }
+        serviceViewModel.onServiceError  = {(_ error: ServiceError)  -> Void in
+            XCTAssert(false, error.message)
+            self.expectation.fulfill()
+        }
+    }
+    
 }
