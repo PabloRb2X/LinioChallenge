@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ServiceViewModel{
+public class Service{
     
     public var onSuccessFavoritesService:((_ response: [Favorite]) -> ())?
     public var onServiceError: ((_ error: ServiceError)->())?

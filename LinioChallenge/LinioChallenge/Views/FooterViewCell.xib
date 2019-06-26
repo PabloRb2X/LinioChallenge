@@ -24,7 +24,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-C2-9Zv">
                                 <rect key="frame" x="5" y="5" width="104" height="106"/>
-                                <color key="backgroundColor" red="0.4549019608" green="0.63921568630000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favOn" translatesAutoresizingMaskIntoConstraints="NO" id="Smw-pc-2xm">
                                 <rect key="frame" x="91" y="0.0" width="23" height="23"/>
@@ -32,40 +32,35 @@
                                     <constraint firstAttribute="width" secondItem="Smw-pc-2xm" secondAttribute="height" multiplier="1:1" id="Xyx-dD-ITO"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ckx-52-c2S">
-                                <rect key="frame" x="0.0" y="0.0" width="19.5" height="81"/>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ckx-52-c2S">
+                                <rect key="frame" x="0.0" y="0.0" width="23" height="93"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="fSd-dY-rKG">
-                                        <rect key="frame" x="0.0" y="0.0" width="19.5" height="20.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="fSd-dY-rKG">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="23"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="international" translatesAutoresizingMaskIntoConstraints="NO" id="JHr-ew-sud">
-                                        <rect key="frame" x="0.0" y="20.5" width="19.5" height="20"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refurbished" translatesAutoresizingMaskIntoConstraints="NO" id="aks-cv-5GQ">
+                                        <rect key="frame" x="0.0" y="23" width="23" height="23.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refurbished" translatesAutoresizingMaskIntoConstraints="NO" id="aks-cv-5GQ">
-                                        <rect key="frame" x="0.0" y="40.5" width="19.5" height="20.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="international" translatesAutoresizingMaskIntoConstraints="NO" id="JHr-ew-sud">
+                                        <rect key="frame" x="0.0" y="46.5" width="23" height="23"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freeShipping" translatesAutoresizingMaskIntoConstraints="NO" id="pop-Zb-Lg2">
-                                        <rect key="frame" x="0.0" y="61" width="19.5" height="20"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freeShipping" translatesAutoresizingMaskIntoConstraints="NO" id="pop-Zb-Lg2">
+                                        <rect key="frame" x="0.0" y="69.5" width="23" height="23.5"/>
+                                        <color key="backgroundColor" red="0.40186954050000001" green="0.89813512559999997" blue="0.25316785660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="fSd-dY-rKG" secondAttribute="trailing" id="5qt-8D-pVw"/>
-                                    <constraint firstItem="fSd-dY-rKG" firstAttribute="top" secondItem="Ckx-52-c2S" secondAttribute="top" id="9t2-6Y-QR9"/>
-                                    <constraint firstItem="fSd-dY-rKG" firstAttribute="leading" secondItem="Ckx-52-c2S" secondAttribute="leading" id="Gsm-5R-dfw"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.38905963989999998" green="0.89813512559999997" blue="0.85673288920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ckx-52-c2S" firstAttribute="width" secondItem="QUb-fW-aSW" secondAttribute="width" multiplier="17:100" id="DBQ-Ue-gPv"/>
                             <constraint firstAttribute="bottom" secondItem="aQU-C2-9Zv" secondAttribute="bottom" constant="5" id="DYQ-9y-fTk"/>
-                            <constraint firstItem="Ckx-52-c2S" firstAttribute="height" secondItem="QUb-fW-aSW" secondAttribute="height" multiplier="70:100" id="F2k-gP-002"/>
                             <constraint firstItem="Smw-pc-2xm" firstAttribute="top" secondItem="QUb-fW-aSW" secondAttribute="top" id="Oqf-gp-bbQ"/>
                             <constraint firstAttribute="trailing" secondItem="aQU-C2-9Zv" secondAttribute="trailing" constant="5" id="Qdm-xR-Ap9"/>
-                            <constraint firstItem="Ckx-52-c2S" firstAttribute="leading" secondItem="QUb-fW-aSW" secondAttribute="leading" id="ZbM-kb-6Tq"/>
                             <constraint firstItem="aQU-C2-9Zv" firstAttribute="leading" secondItem="QUb-fW-aSW" secondAttribute="leading" constant="5" id="fNr-Xi-pr3"/>
+                            <constraint firstItem="Ckx-52-c2S" firstAttribute="top" secondItem="QUb-fW-aSW" secondAttribute="top" id="o88-xb-kda"/>
+                            <constraint firstItem="Ckx-52-c2S" firstAttribute="leading" secondItem="QUb-fW-aSW" secondAttribute="leading" id="q0O-9S-3Uz"/>
                             <constraint firstAttribute="trailing" secondItem="Smw-pc-2xm" secondAttribute="trailing" id="tg3-er-Ve6"/>
-                            <constraint firstItem="Ckx-52-c2S" firstAttribute="top" secondItem="QUb-fW-aSW" secondAttribute="top" id="v6J-jM-7o6"/>
                             <constraint firstItem="Smw-pc-2xm" firstAttribute="width" secondItem="QUb-fW-aSW" secondAttribute="width" multiplier="20:100" id="wYa-Ab-arQ"/>
                             <constraint firstItem="aQU-C2-9Zv" firstAttribute="top" secondItem="QUb-fW-aSW" secondAttribute="top" constant="5" id="ykr-IG-ijV"/>
                         </constraints>
@@ -75,7 +70,9 @@
             <constraints>
                 <constraint firstItem="QUb-fW-aSW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8AS-G5-OdJ"/>
                 <constraint firstAttribute="trailing" secondItem="QUb-fW-aSW" secondAttribute="trailing" id="Nv4-Gz-IV1"/>
+                <constraint firstItem="Ckx-52-c2S" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="20:100" id="Qog-X7-y5m"/>
                 <constraint firstAttribute="bottom" secondItem="QUb-fW-aSW" secondAttribute="bottom" id="cD4-37-gJH"/>
+                <constraint firstItem="Ckx-52-c2S" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="80:100" id="wXp-hj-vfh"/>
                 <constraint firstItem="QUb-fW-aSW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x6w-G5-xYB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -88,6 +85,7 @@
                 <outlet property="internationalImage" destination="JHr-ew-sud" id="fyX-gq-p7M"/>
                 <outlet property="plusImage" destination="fSd-dY-rKG" id="xCa-Kc-2RG"/>
                 <outlet property="refurbishedImage" destination="aks-cv-5GQ" id="2Kh-qf-Zzq"/>
+                <outlet property="stackView" destination="Ckx-52-c2S" id="rKF-N2-478"/>
             </connections>
             <point key="canvasLocation" x="-71.014492753623188" y="95.758928571428569"/>
         </collectionViewCell>

@@ -29,9 +29,9 @@
 		9A1EA79C22C29D5000ECD548 /* FooterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1EA79A22C29D5000ECD548 /* FooterViewCell.xib */; };
 		9A1EA79E22C2D09B00ECD548 /* wishlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1EA79D22C2D09B00ECD548 /* wishlist.json */; };
 		9A1EA7A022C2D6E000ECD548 /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */; };
-		9A1EA7A222C2D7E500ECD548 /* ServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */; };
+		9A1EA7A222C2D7E500ECD548 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A122C2D7E500ECD548 /* Service.swift */; };
 		9A1EA7A422C2D7F100ECD548 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */; };
-		9A1EA7A522C2DA7000ECD548 /* ServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */; };
+		9A1EA7A522C2DA7000ECD548 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A122C2D7E500ECD548 /* Service.swift */; };
 		9A1EA7A622C2DA9100ECD548 /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */; };
 		9A1EA7A722C2DACD00ECD548 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA78922C296D600ECD548 /* FavoritesModel.swift */; };
 		9A1EA7A822C2DBA300ECD548 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */; };
@@ -86,7 +86,7 @@
 		9A1EA79A22C29D5000ECD548 /* FooterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterViewCell.xib; sourceTree = "<group>"; };
 		9A1EA79D22C2D09B00ECD548 /* wishlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wishlist.json; sourceTree = "<group>"; };
 		9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUtils.swift; sourceTree = "<group>"; };
-		9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewModel.swift; sourceTree = "<group>"; };
+		9A1EA7A122C2D7E500ECD548 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		9A8FA0A0D9726E88DF2E44FB /* Pods-LinioChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinioChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-LinioChallengeTests/Pods-LinioChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B6555B7F647261ECCB371BA /* Pods_LinioChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinioChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,7 +248,7 @@
 			children = (
 				9A1EA79122C29C1F00ECD548 /* Extensions.swift */,
 				9A1EA79F22C2D6E000ECD548 /* ServiceUtils.swift */,
-				9A1EA7A122C2D7E500ECD548 /* ServiceViewModel.swift */,
+				9A1EA7A122C2D7E500ECD548 /* Service.swift */,
 				9A1EA7A322C2D7F100ECD548 /* ServiceManager.swift */,
 			);
 			path = Utils;
@@ -526,7 +526,7 @@
 				9A1EA75222C28D4900ECD548 /* AppDelegate.swift in Sources */,
 				9A1EA75A22C28D4900ECD548 /* LinioChallenge.xcdatamodeld in Sources */,
 				9A1EA78E22C29B7C00ECD548 /* LoadingView.swift in Sources */,
-				9A1EA7A222C2D7E500ECD548 /* ServiceViewModel.swift in Sources */,
+				9A1EA7A222C2D7E500ECD548 /* Service.swift in Sources */,
 				9A1EA78A22C296D600ECD548 /* FavoritesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,7 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A1EA7A522C2DA7000ECD548 /* ServiceViewModel.swift in Sources */,
+				9A1EA7A522C2DA7000ECD548 /* Service.swift in Sources */,
 				9A1EA7A622C2DA9100ECD548 /* ServiceUtils.swift in Sources */,
 				9A1EA76A22C28D4C00ECD548 /* LinioChallengeTests.swift in Sources */,
 				9A1EA7A722C2DACD00ECD548 /* FavoritesModel.swift in Sources */,

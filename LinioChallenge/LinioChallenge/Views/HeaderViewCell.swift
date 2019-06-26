@@ -20,5 +20,23 @@ class HeaderViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func initCell(favorite: Favorite){
+        collectionLabel.text = favorite.name
+        
+        if let products = favorite.products{
+            totalItemsLabel.text = String(products.count)
+            
+            if let imageStr1 = Array(products.values)[0].image{
+                image1.downloadImage(from: imageStr1)
+                if let imageStr2 = Array(products.values)[1].image{
+                    image2.downloadImage(from: imageStr2)
+                    if let imageStr3 = Array(products.values)[2].image{
+                        image3.downloadImage(from: imageStr3)
+                    }
+                }
+            }
+        }
+    }
 
 }

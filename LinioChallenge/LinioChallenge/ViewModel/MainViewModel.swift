@@ -8,23 +8,52 @@
 
 import Foundation
 
+protocol MainProtocol {
+    func didStartService()
+    func didSuccessService()
+    func didErrorService()
+}
+
 class MainViewModel{
     
-    let serviceViewModel: ServiceViewModel = ServiceViewModel()
+    let service: Service = Service()
+    var mainDelegate: MainProtocol?
+    
+    var favorites: [Favorite] = []
+    var productsArray: [Product] = []
     
     init() {
-        getFavoritesService()
+        //getFavoritesService()
     }
     
     func getFavoritesService(){
-        serviceViewModel.performFavoritesService()
-        serviceViewModel.onSuccessFavoritesService = {(_ response: [Favorite]) -> Void in
-            print("response = ", response)
+        mainDelegate?.didStartService()
         
-        }
-        serviceViewModel.onServiceError = {(_ error: ServiceError)  -> Void in
+        service.performFavoritesService()
+        service.onSuccessFavoritesService = {(_ response: [Favorite]) -> Void in
             
-            print("Error en el servicio")
+            print("response = ", response)
+            self.favorites = response
+            self.getTotalProducts()
+            self.mainDelegate?.didSuccessService()
+        }
+        service.onServiceError = {(_ error: ServiceError)  -> Void in
+            
+            print("Error en el servicio: ", error)
+            self.mainDelegate?.didErrorService()
+        }
+    }
+    
+    func getTotalProducts(){
+        if !favorites.isEmpty{
+            
+            for i in 0..<favorites.count{
+                if let products = favorites[i].products{
+                    for j in 0..<products.count{
+                        productsArray.append(Array(products.values)[j])
+                    }
+                }
+            }
         }
     }
     
