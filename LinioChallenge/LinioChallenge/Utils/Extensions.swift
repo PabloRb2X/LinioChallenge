@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AlamofireImage
 
 extension UIViewController{
     public func showLoadingView(){
@@ -45,6 +46,15 @@ extension UIImageView{
                     self.image = UIImage(data: data)
                 }
             }
+        }
+        else{
+            self.backgroundColor = UIColor.lightGray
+        }
+    }
+    
+    func downloadImageWithAF(urlStr: String){
+        if let url = URL(string: urlStr){
+            self.af_setImage(withURL: url)
         }
         else{
             self.backgroundColor = UIColor.lightGray

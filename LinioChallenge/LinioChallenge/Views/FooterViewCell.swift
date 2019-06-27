@@ -33,7 +33,8 @@ class FooterViewCell: UICollectionViewCell {
         var counter = 0
         
         if let imageStr = product.image{
-            imageView.downloadImage(from: imageStr)
+            //imageView.downloadImage(from: imageStr)
+            imageView.downloadImageWithAF(urlStr: imageStr)
         }
         
         /// Plus/Plus48 badge

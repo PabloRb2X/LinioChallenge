@@ -4,7 +4,8 @@
 def frameworks_pods
     pod 'Alamofire'
     pod 'ObjectMapper'
-    pod 'AlamofireObjectMapper' 
+    pod 'AlamofireObjectMapper'
+    pod 'AlamofireImage'
 end
 
 target 'LinioChallenge' do

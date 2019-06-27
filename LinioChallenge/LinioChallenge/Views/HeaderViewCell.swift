@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class HeaderViewCell: UICollectionViewCell {
 
@@ -28,15 +29,18 @@ class HeaderViewCell: UICollectionViewCell {
             totalItemsLabel.text = String(products.count)
             
             if let imageStr1 = Array(products.values)[0].image{
-                image1.downloadImage(from: imageStr1)
+                //image1.downloadImage(from: imageStr1)
+                image1.downloadImageWithAF(urlStr: imageStr1)
                 if let imageStr2 = Array(products.values)[1].image{
-                    image2.downloadImage(from: imageStr2)
+                    //image2.downloadImage(from: imageStr2)
+                    image2.downloadImageWithAF(urlStr: imageStr2)
                     if let imageStr3 = Array(products.values)[2].image{
-                        image3.downloadImage(from: imageStr3)
+                        //image3.downloadImage(from: imageStr3)
+                        image3.downloadImageWithAF(urlStr: imageStr3)
                     }
                 }
             }
         }
     }
-
+    
 }
